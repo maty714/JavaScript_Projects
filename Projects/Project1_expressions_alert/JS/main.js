@@ -1,1 +1,3 @@
-alert("Hello World")
+
+var x = "Hello World";
+document.write(x);
