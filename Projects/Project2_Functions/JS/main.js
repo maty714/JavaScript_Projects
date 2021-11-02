@@ -1,7 +1,7 @@
 function myFunction(){
 
  var str = "Hello World";
- var result = str.fontcolor("Green");
+ var result = str.fontcolor("Green");  //Displays "Hello World" and changes it green
 
  document.getElementById("Function").innerHTML = result;
 
@@ -9,6 +9,6 @@ function myFunction(){
 
 function concat() {
     var str = "Hello";
-    str += "world";
-    document.getElementById("demo").innerHTML = str;
+    str += "world";  //Adds "World" to "Hello"
+    document.getElementById("demo").innerHTML = str; 
     }
