@@ -7,6 +7,11 @@ var y = y.fontcolor("Red");
 var z = z.fontcolor("Green");
 var num1 = 10, num2 = 20;
 
+
+
+
+
+
 window.alert(M);
 document.write(y + " ");
 document.write(z + " ");
