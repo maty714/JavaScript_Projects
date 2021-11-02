@@ -10,5 +10,5 @@ var num1 = 10, num2 = 20;
 window.alert(M);
 document.write(y + " ");
 document.write(z + " ");
-document.write(x + w + " ");
-document.write(num1 + num2)
+document.write(x + w + " "); //Strings together var x and w
+document.write(num1 + num2) // Adds variables num1 and num2
