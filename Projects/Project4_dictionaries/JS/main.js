@@ -9,6 +9,6 @@ function dictionary(){
 
     document.getElementById("dictionaries").innerHTML = car.make;
     delete car.miles;
-    document.getElementById("dictionaries").innerHTML = car.miles;
+    document.getElementById("dictionaries").innerHTML = car.miles; //This will output "undefined" as there is no car.miles anymore
    
 }
