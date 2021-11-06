@@ -2,16 +2,31 @@ function add(){
     var num1 = 20;
     var num2 = 15;
 
-    document.getElementById("Math").innerHTML = num1 * num2;
+    document.getElementById("add").innerHTML = num1 + num2;
 }
 
 function subtract(){
     var num1 = 20;
     var num2 = 15;
 
-    document.getElementById("subtract").innerHTML = num1 / num2;
+    document.getElementById("subtract").innerHTML = num1 - num2;
 
 }
+function multiply(){
+    var num1 = 20;
+    var num2 = 15;
+
+    document.getElementById("multiply").innerHTML = num1 * num2;
+
+}
+function remainder(){
+    var num1 = 20;
+    var num2 = 15;
+
+    document.getElementById("remainder").innerHTML = num1 % num2;
+
+}
+
 
 function many(){
     var num1 = 15;
