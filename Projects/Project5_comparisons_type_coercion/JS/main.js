@@ -36,6 +36,8 @@ document.write("<br>");
 document.write(10>5 || 5>6);
 document.write("<br>");
 document.write(!(10<5)); //not operator
-
+document.write("<br>");
+document.write(x==y);
+document.write("<br>");
 //note to self, operators are the same as C++
 
