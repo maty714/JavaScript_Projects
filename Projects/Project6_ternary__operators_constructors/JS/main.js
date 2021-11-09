@@ -47,14 +47,14 @@ class Animals {
 
    
     Animals (type, noise){
-        this.Species = type;
+        this.species = type;
         this.sound = noise;
         
     }
 
     description(){
      
-        console.log("The " + this.Species + " goes " + this.sound);
+        console.log("The " + this.species + " goes " + this.sound);
 
     }
 
