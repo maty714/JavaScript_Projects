@@ -64,3 +64,16 @@ var Animal1 = new Animals("Lion", "Roar");
 Animal1.description();
 
 
+
+
+function nested_function(){
+
+    
+
+    function myFunction(){
+        return 4 + 4;
+    }
+   
+
+    document.getElementById("nested").innerHTML = myFunction();
+}
