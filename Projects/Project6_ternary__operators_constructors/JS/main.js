@@ -46,20 +46,21 @@ function myFunction() {
 class Animals {
 
    
-    Animals (type, noise){
+    constructor (type, sound){
         this.species = type;
-        this.sound = noise;
-        
+        this.sound = sound;
+        console.log("The constructor is being created")
     }
 
     description(){
      
-        console.log("The " + this.species + " goes " + this.sound);
-
+       console.log("The " + this.species + " goes " + this.sound);
     }
 
 }
 
 
 var Animal1 = new Animals("Lion", "Roar");
+Animal1.description();
+
 
