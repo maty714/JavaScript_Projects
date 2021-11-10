@@ -1,18 +1,25 @@
 function myFunction(){
     
-    Age = document.getElementById("Age").value;
-        
-    if (Age >= 18){
+    var time = new Date().getHours();
+    
+    if (time < 12 && time > 0){
 
-    Vote = "You are old enough to vote!";
+    Greeting = "It is Morning";
+    }
+    
+    else if (time >= 12 && time < 18)
+    {
+        Greeting = "It is afternoon";
+
     }
     else{
 
-    Vote = "You are not old enough to vote!";
+    Greeting = "It is night";
 
     }
+
     
-    document.getElementById("result").innerHTML = Vote;
+    document.getElementById("result").innerHTML = Greeting;
         
 }
 
