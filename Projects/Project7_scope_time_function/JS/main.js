@@ -4,14 +4,15 @@ function myFunction(){
         
     if (age >= 18){
 
-       Vote = "You are old enough to vote!";
-        }
-        else{
+    Vote = "You are old enough to vote!";
+    }
+    else{
 
-        Vote = "You are not old enough to vote!";
+    Vote = "You are not old enough to vote!";
 
-        }
-        document.getElementById("result").innerHTML = Vote;
+    }
+    
+    document.getElementById("result").innerHTML = Vote;
         
 }
 
