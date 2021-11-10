@@ -1,8 +1,8 @@
 function myFunction(){
     
-    age = document.getElementById("age").value;
+    Age = document.getElementById("Age").value;
         
-    if (age >= 18){
+    if (Age >= 18){
 
     Vote = "You are old enough to vote!";
     }
