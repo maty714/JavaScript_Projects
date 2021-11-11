@@ -32,3 +32,34 @@ function search(){
     document.getElementById("result4").innerHTML = sentence.search("World");
 
 }
+
+function to_String(){
+
+    var X = 10;
+    document.getElementById("result5").innerHTML = X.toString();
+
+
+}
+
+
+function precision(){
+
+    var x = 45.678;
+    document.getElementById("result6").innerHTML = x.toPrecision(3);
+
+}
+
+
+function fixed(){
+
+    var x = 45.678;
+    document.getElementById("result7").innerHTML = x.toPrecision(2);
+
+}
+
+function Value_Of(){
+
+    var x = "Hello World";
+    document.getElementById("result8").innerHTML = x.valueOf();
+
+}
