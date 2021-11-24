@@ -90,7 +90,7 @@ function checkWinConditions(){
         drawWinLine(50,100,558,100)
     }
     else if (arrayIncludes('3O','4O','5O')){
-        drawWinLine(50,508,558,508)
+        drawWinLine(50,304,558,304)
     }
     else if (arrayIncludes('6O','7O','8O')){
         drawWinLine(50,508,558,508)
@@ -204,8 +204,8 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2){
     function clear(){
 
         const animationLoop = requestAnimationFrame(clear);
-        c.clearRect(0,0,608,608)
-        cancelAnimationFrame(animationLoop)
+        c.clearRect(0,0,608,608);
+        cancelAnimationFrame(animationLoop);
     }
 
     disableClick();
