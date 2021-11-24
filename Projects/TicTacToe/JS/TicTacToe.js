@@ -75,7 +75,7 @@ function checkWinConditions(){
         drawWinLine(100,50,100,558)
     }
     else if (arrayIncludes('1X','4X','7X')){
-        drawWinLine(304,50,304,358)
+        drawWinLine(304,50,304,558)
     }
     else if (arrayIncludes('2X','5X','8X')){
         drawWinLine(508,50,508,558)
@@ -99,7 +99,7 @@ function checkWinConditions(){
         drawWinLine(100,50,100,558)
     }
     else if (arrayIncludes('1O','4O','7O')){
-        drawWinLine(304,50,304,358)
+        drawWinLine(304,50,304,558)
     }
     else if (arrayIncludes('2O','5O','8O')){
         drawWinLine(508,50,508,558)
@@ -115,6 +115,7 @@ function checkWinConditions(){
     
     setTimeout(function(){ resetGame(); }, 1000)
     }
+    
 }
 
 function arrayIncludes(squareA, squareB, squareC){
@@ -170,32 +171,14 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2){
 
         if(x1 <= x2 && y1 <= y2){
             
-            if(x < x2)
-            {
-                x += 10;
-            }
-            if(y < y2){
-
-                y += 10;
-            }
-            if(x >= x2 && y >= y2){
- 
-                cancelAnimationFrame(animationLoop);
-            }
+            if(x < x2){x += 10;}
+            if(y < y2){y += 10;}
+            if(x >= x2 && y >= y2) {cancelAnimationFrame(animationLoop); }
         }
         if(x1 <= x2 && y1 >= y2){
-            if (x < x2){
-
-                x += 10;
-            }
-            if(y > y2){
-
-                y -=10;
-            }
-            if(x >= x2 && y <= y2) {
-            
-                cancelAnimationFrame(animationLoop);
-            }
+            if (x < x2) {x += 10;}
+            if (y > y2) {y -=10;}
+            if (x >= x2 && y <= y2) {cancelAnimationFrame(animationLoop); }
 
         }
 
