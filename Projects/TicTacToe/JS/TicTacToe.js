@@ -10,10 +10,10 @@ function placeXorO(squareNumber){
         let select = document.getElementById(squareNumber);
         
         if (activePlayer ==='X'){
-            select.style.backgroundImage = 'url("./Images/x_new.png")';
+            select.style.backgroundImage = 'url("./Images/x.png")';
         }
         else {
-            select.style.backgroundImage = 'url("./Images/o_new.png")';
+            select.style.backgroundImage = 'url("./Images/o.png")';
         }
         
         selectedSquares.push(squareNumber + activePlayer);
@@ -170,9 +170,9 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2){
 
     function clear(){
 
-        const animateLoop = requestAnimationFrame(clear);
+        const animationLoop = requestAnimationFrame(clear);
         c.clearRect(0,0,608,608);
-        cancelAnimationFrame(animateLoop);
+        cancelAnimationFrame(animationLoop);
     }
 
     disableClick();
