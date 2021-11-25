@@ -41,11 +41,14 @@ function Handle_Operator(Next_Operator){
         Calculator.operator = Next_Operator;
         return;
     }
+    if (First_Operand == null){
+        Calculator.First_Operand = Value_of_Input;
+    }
     else if(operator){
         
         //The || is an or statement but not like other languages
         // If the left is true, then 
-        const Value_Now = First_Operand || 0
+        const Value_Now = First_Operand || 0;
         
         let result = perform_Calculation[operator](Value_Now, Value_of_Input);
         result = Number(result).toFixed(9)
@@ -77,16 +80,16 @@ function Calculator_Reset(){
 }
 
 function Update_Display(){
-    const display = document.querySelector('.Calculator-screen');
+    const display = document.querySelector('.calculator-screen');
     display.Value = Calculator.display_Value;
 }
 
 Update_Display();
 
 const keys = document.querySelector('.calculator-keys');
-keys.addEventListener('click', (Event) => {
+keys.addEventListener('click', (event) => {
 
-    const { target } = Event;
+    const { target } = event;
     
     if (!target.matches('button')){
         return;
