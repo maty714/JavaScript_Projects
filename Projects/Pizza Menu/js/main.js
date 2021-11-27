@@ -36,9 +36,12 @@ function getReceipt(){
 }
 
 function getTopping(runningTotal,text1){
+    
     var toppingTotal = 0;
+    var Veg_selectedTopping = [];
     var selectedTopping = [];
     var toppingArray = document.getElementsByClassName("toppings")
+    var Veg_toppingArray = document.getElementsByClassName("VegTopping")
 
     for (var j = 0; j < toppingArray.length; j++){
 
@@ -48,6 +51,17 @@ function getTopping(runningTotal,text1){
             text1 += toppingArray[j].value + "<br>";
         }
     }
+
+    for (var k = 0; k < Veg_toppingArray.length; k++){
+        if (Veg_toppingArray[k].checked){
+            Veg_selectedTopping.push(Veg_toppingArray[k].value); //Will add the vegatables in the topping section
+            console.log("selected topping item: (" + Veg_toppingArray[k].value + ") ");
+            text1 += Veg_toppingArray[k].value + "<br>";
+        }
+    }
+     
+   
+    
     var toppingCount = selectedTopping.length;
     if(toppingCount > 1){
         toppingTotal = (toppingCount - 1);
@@ -55,12 +69,25 @@ function getTopping(runningTotal,text1){
     else{
         toppingTotal = 0
     }
-    runningTotal = (runningTotal + toppingTotal);
-    console.log("total selected topping items: " + toppingCount);
+
+    var Veg_toppingCount = Veg_selectedTopping.length;
+    if(Veg_toppingCount > 1){
+        Veg_toppingCount = (Veg_toppingCount - 1);
+    }
+    else{
+        Veg_toppingCount = 0
+    }
+
+    runningTotal = (runningTotal + toppingTotal + Veg_toppingCount);
+    console.log("total selected meat items: " + toppingCount);
+    console.log("total selected vegatable items" + Veg_toppingCount)
     console.log(toppingCount + " topping - 1 free topping = " + "$" + toppingTotal + ".00");
+    console.log(Veg_toppingCount + " Vegatable topping - 1 free topping = " + "$" + Veg_toppingCount + ".00");
     console.log("topping text1: " + text1);
     console.log("Purchase Total: " + "$" + runningTotal + ".00");
     document.getElementById("showText").innerHTML = text1;
     document.getElementById("totalPrice").innerHTML = "<h3>Total: <strong>$" + runningTotal + ".00" + "</strong></h3>";
 }
+
+
 
