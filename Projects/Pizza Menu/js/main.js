@@ -44,7 +44,7 @@ function getTopping(runningTotal,text1){
     var Veg_toppingArray = document.getElementsByClassName("VegTopping")
 
     for (var j = 0; j < toppingArray.length; j++){
-
+        
         if (toppingArray[j].checked){
             selectedTopping.push(toppingArray[j].value);
             console.log("selected topping item: (" + toppingArray[j].value + ") ");
@@ -53,6 +53,7 @@ function getTopping(runningTotal,text1){
     }
 
     for (var k = 0; k < Veg_toppingArray.length; k++){
+        
         if (Veg_toppingArray[k].checked){
             Veg_selectedTopping.push(Veg_toppingArray[k].value); //Will add the vegatables in the topping section
             console.log("selected topping item: (" + Veg_toppingArray[k].value + ") ");
