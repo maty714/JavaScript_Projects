@@ -61,7 +61,7 @@ function getTopping(runningTotal,text1){
     }
      
    
-    
+    //Counts the amount of meats selected and determines the extra cost
     var toppingCount = selectedTopping.length;
     if(toppingCount > 1){
         toppingTotal = (toppingCount - 1);
@@ -70,6 +70,7 @@ function getTopping(runningTotal,text1){
         toppingTotal = 0
     }
 
+    //Counts the amount of Vegetables selected and determines the extra cost
     var Veg_toppingCount = Veg_selectedTopping.length;
     if(Veg_toppingCount > 1){
         Veg_toppingCount = (Veg_toppingCount - 1);
