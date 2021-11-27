@@ -1,13 +1,15 @@
 #menuBG {
     width: 400px;
     height: 470px;
-    margin: 10px auto;
+    margin: 20px auto;
     
 }
+
 #frmMenu{
-    width: 700px;
+    width: 600px;
     height: 200px;
 }
+
 #totalPrice{
     width: 200px;
     height: 190px;
@@ -18,7 +20,7 @@
 .left{
     width: 200px;
     height: 200px;
-    float: left;
+    float: Center;
     font-family: cursive;
     color: white;
 }
@@ -26,7 +28,7 @@
 .middle{
     width: 200px;
     height: 200px;
-    float: left;
+    float: Center;
     font-family: cursive;
     color: white;
 }
@@ -34,7 +36,7 @@
 .right{
     width: 200px;
     height: 200px;
-    float: left;
+    float: Center;
     font-family: cursive;
     color: white;
 }
@@ -45,16 +47,17 @@
     float: left;
 }
 #cart{
-    top: 0;margin: 0px auto;
+    top: 0;
+    margin: 0px ;
     width: 400px;
     height: 200px;
 }
 
 #btnOrder{
-    margin: 10px 0px 0px 100px;
+    margin: 50px 0px 0px 100px;
     width: 100px;   
     height: 40px;
-
+    display: block;
 }
 
 body{
