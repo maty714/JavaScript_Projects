@@ -1,0 +1,14 @@
+p{
+    font-size: 5vw;
+    opacity: 1;
+    transition: 1s opacity;
+}
+
+p.fade-out{
+    opacity: 0;
+    transition: none;
+}
+
+html {
+    background-color: black;
+  }
