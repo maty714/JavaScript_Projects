@@ -9,18 +9,18 @@
 -To Do App
 
 
-# Pizza Menu
+### Pizza Menu
 
 This project is a menu used to order pizza with a various selection of toppings. It will then calculate the cost of the order.
 
-# Tic - Tac - Toe Game
+### Tic - Tac - Toe Game
 
 This project was a simple tic tac toe game. 
 
-# Calculator
+### Calculator
 
 This project is a simple calculator that can add, subtract, multiply, and divide
 
-# To Do App
+### To Do App
 
-THis project is a simple To Do app in which a user can add and delete items
+This project is a simple To Do app in which a user can add and delete items
